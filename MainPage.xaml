@@ -10,8 +10,8 @@
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="devops.png"
+                SemanticProperties.Description="Representation for my passion"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
@@ -22,12 +22,12 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="I work as a DevOps engineer for 2 years and this is my first multiplatform app developed in .NET MAUI"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
                 HorizontalOptions="Center" />
-
+          
             <Button
                 x:Name="CounterBtn"
                 Text="Click me"
