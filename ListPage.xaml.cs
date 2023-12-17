@@ -2,7 +2,6 @@ namespace Marcu_Bogdan_Lab7;
 using Marcu_Bogdan_Lab7.Models;
 
 
-
 public partial class ListPage : ContentPage
 {
 
@@ -39,6 +38,14 @@ public partial class ListPage : ContentPage
         var shopl = (ShopList)BindingContext;
 
         listView.ItemsSource = await App.Database.GetListProductsAsync(shopl.ID);
+
+
+
+        var items = await App.Database.GetShopsAsync();
+        ShopPicker.ItemsSource = (System.Collections.IList)items;
+        ShopPicker.ItemDisplayBinding = new Binding("ShopDetails");
+
+
     }
     async void OnDeleteItemClicked(object sender, EventArgs e)
     {
